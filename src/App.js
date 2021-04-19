@@ -3,7 +3,6 @@ import './App.css';
 import { useSelector } from 'react-redux';
 import InputForm from './form/inputForm';
 import resultReducer from './reducers';
-import showResult from './form/showResult';
 // import { Values } from "redux-form-website-template";
 
 function App() {
@@ -11,9 +10,9 @@ function App() {
   return (
     <div className="App">
       <div>
-        How much is value of your money after x years?
+        How much will value of your money after x years?
       </div>
-      <InputForm pnSubmit={showResult}/>
+      <InputForm/>
     </div>
   );
 }
